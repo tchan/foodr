@@ -1,13 +1,18 @@
 #nav-header {
-
-  .settings-list-container {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 10px;
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
   }
   .settings-container {
     display: inline-block;
     cursor: pointer;
+    padding-left: 20px;
+  }
+
+  .user {
+    padding-right: 20px;
   }
 
   .bar1, .bar2, .bar3 {
