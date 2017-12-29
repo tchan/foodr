@@ -1,8 +1,7 @@
-<div class='card-container'>
+{{#base-card}}
   {{#each restaurants as |restaurant|}}
     Name: {{restaurant.name}}
     <br>
     Address: {{restaurant.address}}
   {{/each}}
-</div>
-{{yield}}
+{{/base-card}}

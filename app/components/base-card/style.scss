@@ -1,0 +1,27 @@
+.base-card {
+  .card-container {
+    display: block;
+    height: 40vh;
+    margin: 6px;
+    border: 1px solid #a9a9a9;
+  }
+  .card-content-container {
+    // declare the html element as a flexbox
+    display: flex;
+
+    // align-items: flex-start | flex-end | center | baseline | stretch;
+    // all elements should be centered vertically
+    align-items: center;
+
+    // justify-content: flex-start | flex-end | center | space-between | space-around;
+    // all elements should be centered horizontilly
+    justify-content: center;
+    height: 90%;
+  }
+  .accordion {
+    line-height: 2.5;
+    padding: 0 0 0 1em;
+    background-color: #3498db;
+    color: #fff;
+  }
+}
