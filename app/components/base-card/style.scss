@@ -1,7 +1,7 @@
 .base-card {
   .card-container {
     display: block;
-    height: 40vh;
+    max-height: 40vh;
     margin-top: 6px;
   }
   .card-content-container {
@@ -15,12 +15,29 @@
     // justify-content: flex-start | flex-end | center | space-between | space-around;
     // all elements should be centered horizontilly
     justify-content: center;
-    height: 90%;
+    height: 36vh;
+    &.hide {
+      display: none;
+      height: 0;
+    }
   }
   .accordion {
     line-height: 2.5;
-    padding: 0 0 0 1em;
+    padding: 0 1em 0 1em;
     background-color: $main-blue;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    .accordion-item {
+      display: flex;
+    }
+    .action-icon {
+      cursor: pointer;
+      transition: all .35s;
+    }
+    .rotated {
+      transform: rotate(315deg);
+    }
   }
 }
