@@ -1,0 +1,8 @@
+<div class='card-container'>
+  {{#each restaurants as |restaurant|}}
+    Name: {{restaurant.name}}
+    <br>
+    Address: {{restaurant.address}}
+  {{/each}}
+</div>
+{{yield}}

@@ -1,12 +1,9 @@
 <div class='main-container'>
   {{nav-header user=model.user}}
   <div class='content-container'>
-    <div class='card-container'>
-      card content
-    </div>
-    <div class='card-container'>
-      card content
-    </div>
+    {{restaurant-card restaurants=model.restaurants}}
+    {{orders-liked-card orders=model.orders}}
+    {{orders-disliked-card orders=model.orders}}
   </div>
 </div>
 {{outlet}}
