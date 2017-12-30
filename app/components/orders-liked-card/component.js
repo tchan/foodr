@@ -15,6 +15,10 @@ export default Component.extend({
           foodOrder.save();
         })
       })
+    },
+
+    deleteFood(order) {
+      order.destroyRecord();
     }
   }
 });
