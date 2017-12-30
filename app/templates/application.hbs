@@ -2,8 +2,9 @@
   {{nav-header user=model.user}}
   <div class='content-container'>
     {{restaurant-card restaurants=model.restaurants}}
-    {{orders-liked-card orders=model.orders}}
-    {{orders-disliked-card orders=model.orders}}
+    {{orders-liked-card restaurants=model.restaurants}}
+    {{orders-disliked-card restaurants=model.restaurants}}
   </div>
+  {{log 'model' model}}
 </div>
 {{outlet}}

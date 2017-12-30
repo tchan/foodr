@@ -7,10 +7,7 @@ export default Component.extend({
     let restaurantName = this.get('restaurantName');
     return `You last visited ${restaurantName}`;
   }),
-  restaurantName: computed('restaurants', function() {
-    let restaurant = this.get('restaurants').objectAt(0);
-    return restaurant.get('name');
-  }),
+  restaurantName: computed.readOnly('restaurants.name'),
   actions: {
   }
 });
