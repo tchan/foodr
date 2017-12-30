@@ -1,21 +1,12 @@
 .base-card {
   .card-container {
     display: block;
-    max-height: 40vh;
     margin-top: 6px;
   }
   .card-content-container {
-    // declare the html element as a flexbox
     display: flex;
-
-    // align-items: flex-start | flex-end | center | baseline | stretch;
-    // all elements should be centered vertically
-    align-items: center;
-
-    // justify-content: flex-start | flex-end | center | space-between | space-around;
-    // all elements should be centered horizontilly
-    justify-content: center;
-    height: 36vh;
+    height: 100%;
+    padding: 20px;
     &.hide {
       display: none;
       height: 0;

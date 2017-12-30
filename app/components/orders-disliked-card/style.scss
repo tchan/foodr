@@ -1,3 +1,5 @@
-#orders-liked-card {
-
+#orders-disliked-card {
+  .base-card > .card-container > .card-content-container {
+    flex-direction: column;
+  }
 }
