@@ -1,5 +1,18 @@
 #orders-disliked-card {
-  .base-card > .card-container > .card-content-container {
+  .base-card .card-container .card-content-container {
     flex-direction: column;
+  }
+  input {
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 22px;
+  }
+  .add-span {
+    cursor: pointer;
+  }
+  .delete-span {
+    margin-left: 10px;
   }
 }
