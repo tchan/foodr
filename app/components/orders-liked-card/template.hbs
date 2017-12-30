@@ -2,7 +2,7 @@
   <div>{{input value=name placeholder='Add a new food'}} <span class='add-span' {{action 'addFood' name}}>+ Add</span></div>
   <ul>
   {{#each restaurants.orders as |order|}}
-    <li>{{order.name}} <span {{action 'deleteFood' order}}> X</span></li>
+    <li>{{order.name}} <span class='delete-span' {{action 'deleteFood' order}}> X</span></li>
   {{/each}}
   </ul>
 {{/base-card}}
