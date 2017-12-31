@@ -1,0 +1,9 @@
+{{#base-card title='Restaurants visited'}}
+  <div>
+    <ul>
+    {{#each model as |restaurant|}}
+      <li>{{restaurant.name}}</li>
+    {{/each}}
+    </ul>
+  </div>
+{{/base-card}}
