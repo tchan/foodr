@@ -2,7 +2,7 @@
   <div>
     <ul>
     {{#each model as |restaurant|}}
-      <li>{{restaurant.name}}</li>
+      <li>{{#link-to 'restaurants.show'restaurant.id}} {{restaurant.name}} {{/link-to}}</li>
     {{/each}}
     </ul>
   </div>
