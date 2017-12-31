@@ -6,7 +6,6 @@ import { task } from 'ember-concurrency';
 export default Component.extend({
   elementId: 'orders-liked-card',
   store: service(),
-
   likedOrders: computed.filterBy('restaurants.orders', 'liked', true),
   addFood: task(function *(value) {
     let restaurant = this.get('restaurants');

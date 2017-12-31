@@ -12,5 +12,10 @@ export default Route.extend({
         return data.get('firstObject');
       })
     })
+  },
+  actions: {
+    didTransition() {
+      this.controller.set('showSide', false);
+    }
   }
 });

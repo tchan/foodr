@@ -1,9 +1,6 @@
 <div class='main-container'>
-  {{nav-header user=model.user}}
+  {{nav-header user=model.user showSide=showSide}}
   <div class='content-container'>
-    {{restaurant-card restaurants=model.restaurants}}
-    {{orders-liked-card restaurants=model.restaurants}}
-    {{orders-disliked-card restaurants=model.restaurants}}
+    {{outlet}}
   </div>
 </div>
-{{outlet}}
