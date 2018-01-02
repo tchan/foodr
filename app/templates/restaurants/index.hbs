@@ -1,9 +1,1 @@
-{{#base-card title='Restaurants visited'}}
-  <div>
-    <ul>
-    {{#each model as |restaurant|}}
-      <li>{{#link-to 'restaurants.show'restaurant.id}} {{restaurant.name}} {{/link-to}}</li>
-    {{/each}}
-    </ul>
-  </div>
-{{/base-card}}
+{{restaurant-card restaurants=model showList=true}}

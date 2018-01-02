@@ -1,3 +1,25 @@
-{{#base-card title=title}}
-    Address: {{restaurants.address}}
+{{#if showList}}
+  {{#base-card title='Restaurants visited'}}
+  <div>
+    <ul>
+      <li class='add-new-restaurant-button' {{action 'showNewForm'}}>Add new +</li>
+
+      {{#if showNewForm}}
+        {{input value=newRestaurantName placeholder='Name'}}
+        <br>
+        {{input value=newRestaurantAddress placeholder='Address'}}
+        <br>
+        <button class='submit-button' onclick={{perform addRestaurant}}> Submit </button>
+      {{/if}}
+
+      {{#each restaurants as |restaurant|}}
+        <li>{{#link-to 'restaurants.show'restaurant.id}} {{restaurant.name}} {{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </div>
 {{/base-card}}
+{{else}}
+  {{#base-card title=title}}
+      Address: {{restaurants.address}}
+  {{/base-card}}
+{{/if}}

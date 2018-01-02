@@ -1,3 +1,9 @@
 #restaurant-card {
-
+  // put some space to separate from the add new list item (change later)
+  li:nth-child(2) {
+    margin-top: 25px;
+  }
+  .submit-button {
+    margin-bottom: 20px;
+  }
 }
